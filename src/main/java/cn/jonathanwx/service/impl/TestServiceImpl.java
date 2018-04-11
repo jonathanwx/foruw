@@ -1,7 +1,6 @@
 package cn.jonathanwx.service.impl;
 
-import cn.jonathanwx.dao.Dao;
-import cn.jonathanwx.model.ReferenceDetail;
+
 import cn.jonathanwx.service.TestService;
 import org.springframework.stereotype.Service;
 
@@ -14,11 +13,10 @@ import java.util.List;
  */
 @Service
 public class TestServiceImpl implements TestService {
-    @Resource
-    private Dao referenceDetailDao;
 
-    @Override
-    public List<ReferenceDetail> list() {
-        return referenceDetailDao.list("from ReferenceDetail as n");
-    }
+
+//    @Override
+//    public List<ReferenceDetail> list() {
+//        return referenceDetailDao.list("from ReferenceDetail as n");
+//    }
 }

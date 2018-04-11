@@ -9,5 +9,5 @@ import java.util.List;
  * 2018.03.15 20:51
  */
 public interface TestService {
-    public List<ReferenceDetail> list();
+//    public List<ReferenceDetail> list();
 }

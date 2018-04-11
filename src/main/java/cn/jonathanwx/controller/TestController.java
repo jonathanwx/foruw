@@ -19,9 +19,9 @@ public class TestController {
     @Resource
     private TestService testService;
 
-    @RequestMapping("/list")
-    public List<ReferenceDetail> list() {
-        return testService.list();
-    }
+//    @RequestMapping("/list")
+//    public List<ReferenceDetail> list() {
+//        return testService.list();
+//    }
 
 }
