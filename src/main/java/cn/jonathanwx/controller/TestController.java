@@ -2,6 +2,7 @@ package cn.jonathanwx.controller;
 
 import cn.jonathanwx.model.ReferenceDetail;
 import cn.jonathanwx.service.TestService;
+import org.springframework.data.domain.Page;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -20,8 +21,8 @@ public class TestController {
     private TestService testService;
 
     @RequestMapping("/list")
-    public List<ReferenceDetail> list() {
-        return testService.list();
+    public Page<ReferenceDetail> list() {
+        return testService.pageQuery();
     }
 
 }

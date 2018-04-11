@@ -1,6 +1,7 @@
 package cn.jonathanwx.service;
 
 import cn.jonathanwx.model.ReferenceDetail;
+import org.springframework.data.domain.Page;
 
 import java.util.List;
 
@@ -9,5 +10,6 @@ import java.util.List;
  * 2018.03.15 20:51
  */
 public interface TestService {
-    public List<ReferenceDetail> list();
+    List<ReferenceDetail> list();
+    Page<ReferenceDetail> pageQuery();
 }
